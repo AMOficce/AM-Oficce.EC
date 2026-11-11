@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0209DE">
+
+    <title>AM OFFICE | Amoblamiento, modulares y mantenimiento en Quito</title>
+    <meta name="description"
+        content="Amoblamiento de hogares y oficinas, venta de modulares y sillas de oficina, y mantenimiento de juegos de sala y sillas de oficina en Quito. Más de 10 años de experiencia.">
+
+    <!-- CONEXIÓN CON EL CSS -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- CONEXIÓN CON EL JAVASCRIPT -->
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div class="progreso" id="progreso" aria-hidden="true"></div>
+
+    <header class="encabezado">
+        <div class="contenedor navegacion">
+
+            <a class="marca" href="#inicio" aria-label="AM OFFICE, inicio">
+                <img class="logo" src="./img/logo.png" alt="AM OFFICE" width="150" height="60" hidden
+                    onload="this.hidden=false;document.getElementById('nombre-marca').hidden=true"
+                    onerror="this.remove()">
+                <span id="nombre-marca"><strong>AM</strong> OFFICE</span>
+            </a>
+
+            <nav class="menu" aria-label="Navegación principal">
+                <a href="#servicios">Servicios</a>
+                <a href="#productos">Productos</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#contacto" class="boton">Contacto ↗</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main id="inicio">
+
+        <!-- PORTADA -->
+        <section class="contenedor portada">
+            <div class="portada-texto">
+                <p class="etiqueta">Amoblamiento y mantenimiento · Quito</p>
+
+                <h1>
+                    Tu espacio merece
+                    <span>una nueva vida.</span>
+                </h1>
+
+                <p class="descripcion">
+                    Amoblamos tu hogar y oficina con modulares y sillas de oficina.
+                    También damos mantenimiento a tus juegos de sala y sillas de
+                    oficina para que sigas disfrutando de ellos.
+                </p>
+
+                <div class="acciones">
+                    <a class="boton" href="https://wa.me/593998228348" data-whatsapp="">
+                        Solicitar cotización ↗
+                    </a>
+
+                    <a class="boton secundario" href="#servicios">
+                        Ver servicios
+                    </a>
+                </div>
+
+                <ul class="garantias">
+                    <li>Cotización por WhatsApp</li>
+                    <li>Hogares y empresas</li>
+                    <li>+10 años de experiencia</li>
+                </ul>
+            </div>
+
+            <div class="visual">
+                <figure class="foto foto-portada">
+                    <div class="placeholder">
+                        <strong>Foto principal</strong>
+                        <span>Guarda la foto como img/portada.jpg</span>
+                    </div>
+
+                    <img src="./img/portada.jpg" alt="Espacio amoblado por AM OFFICE" fetchpriority="high"
+                        onerror="this.remove()">
+                </figure>
+
+                <div class="insignia">
+                    <strong>+10 años</strong>
+                    <span>De experiencia</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="franja">
+            <div class="contenedor franja-contenido">
+                <span>Para hogares y empresas</span>
+                <span>Amoblamiento y modulares</span>
+                <span>Mantenimiento de muebles</span>
+            </div>
+        </div>
+
+        <!-- SERVICIOS -->
+        <section id="servicios" class="seccion">
+            <div class="contenedor">
+
+                <div class="titulo-seccion" data-animar>
+                    <div>
+                        <p class="etiqueta">Nuestros servicios</p>
+                        <h2>Soluciones para cada espacio.</h2>
+                    </div>
+
+                    <p>
+                        Desde amoblar un nuevo ambiente hasta cuidar los
+                        muebles que ya forman parte de tu día a día.
+                    </p>
+                </div>
+
+                <div class="servicios">
+                    <article class="servicio" data-animar>
+                        <span class="numero">01 / AMOBLAMIENTO</span>
+                        <h3>Hogares y oficinas</h3>
+                        <p>
+                            Equipamos tu sala, casa u oficina según el tamaño
+                            y las necesidades de tu espacio.
+                        </p>
+                    </article>
+
+                    <article class="servicio" data-animar>
+                        <span class="numero">02 / VENTA</span>
+                        <h3>Modulares y sillas de oficina</h3>
+                        <p>
+                            Vendemos modulares y sillas de oficina para organizar
+                            mejor tus ambientes y trabajar con comodidad.
+                        </p>
+                    </article>
+
+                    <article class="servicio" data-animar>
+                        <span class="numero">03 / SALAS</span>
+                        <h3>Mantenimiento de juegos de sala</h3>
+                        <p>
+                            Cuéntanos qué necesita tu juego de sala y te
+                            indicamos cómo podemos ayudarte.
+                        </p>
+                    </article>
+
+                    <article class="servicio" data-animar>
+                        <span class="numero">04 / SILLAS</span>
+                        <h3>Mantenimiento de sillas de oficina</h3>
+                        <p>
+                            Revisamos tus sillas para que sigas utilizándolas
+                            en tu casa o en tu oficina.
+                        </p>
+                    </article>
+                </div>
+
+                <a class="enlace consulta" href="https://wa.me/593998228348" data-whatsapp="">
+                    Cuéntanos qué necesitas →
+                </a>
+            </div>
+        </section>
+
+        <!-- PRODUCTOS: EDITA LOS TEXTOS SEGÚN TU CATÁLOGO -->
+        <section id="productos" class="seccion fondo-suave">
+            <div class="contenedor">
+
+                <div class="titulo-seccion" data-animar>
+                    <div>
+                        <p class="etiqueta">Productos destacados</p>
+                        <h2>Encuentra tu próximo mueble.</h2>
+                    </div>
+
+                    <p>
+                        Desliza para ver todas las opciones. Escríbenos para
+                        conocer modelos, medidas y precios.
+                    </p>
+                </div>
+
+                <div class="carrusel" data-animar>
+                    <div class="productos" id="productos-pista" tabindex="0" role="region"
+                        aria-label="Productos destacados. Desliza para ver más.">
+
+                        <!-- PRODUCTO 1 -->
+                        <article class="producto">
+                            <figure class="foto">
+                                <div class="placeholder">
+                                    <strong>Foto del producto 1</strong>
+                                    <span>Guarda la foto como img/producto1.jpg</span>
+                                </div>
+
+                                <img src="./img/producto1.jpg" alt="Silla de oficina ergonómica" loading="lazy"
+                                    onerror="this.remove()">
+                            </figure>
+
+                            <div class="producto-info">
+                                <span class="categoria">Oficina</span>
+                                <h3>Sillas de oficina ergonómicas</h3>
+                                <p>
+                                    Comodidad y buena postura para tu jornada de trabajo. Consulta los modelos y colores
+                                    disponibles.
+                                </p>
+
+                                <a class="enlace" href="https://wa.me/593998228348"
+                                    data-whatsapp="sillas de oficina ergonómicas">
+                                    Consultar producto ↗
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- PRODUCTO 2 -->
+                        <article class="producto">
+                            <figure class="foto">
+                                <div class="placeholder">
+                                    <strong>Foto del producto 2</strong>
+                                    <span>Guarda la foto como img/producto2.jpg</span>
+                                </div>
+
+                                <img src="./img/producto2.jpg" alt="Muebles soft seating" loading="lazy"
+                                    onerror="this.remove()">
+                            </figure>
+
+                            <div class="producto-info">
+                                <span class="categoria">Soft seating</span>
+                                <h3>Soft seating</h3>
+                                <p>
+                                    Sillones y asientos cómodos para recepciones, salas de espera y zonas de descanso.
+                                </p>
+
+                                <a class="enlace" href="https://wa.me/593998228348"
+                                    data-whatsapp="muebles soft seating">
+                                    Consultar producto ↗
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- PRODUCTO 3 -->
+                        <article class="producto">
+                            <figure class="foto">
+                                <div class="placeholder">
+                                    <strong>Foto del producto 3</strong>
+                                    <span>Guarda la foto como img/producto3.jpg</span>
+                                </div>
+
+                                <img src="./img/producto3.jpg" alt="Muebles de hogar" loading="lazy"
+                                    onerror="this.remove()">
+                            </figure>
+
+                            <div class="producto-info">
+                                <span class="categoria">Hogar</span>
+                                <h3>Muebles de hogar</h3>
+                                <p>
+                                    Dale un nuevo aire a tu casa. Conoce nuestras opciones para cada ambiente.
+                                </p>
+
+                                <a class="enlace" href="https://wa.me/593998228348" data-whatsapp="muebles de hogar">
+                                    Consultar producto ↗
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- PRODUCTO 4 -->
+                        <article class="producto producto-destacado">
+                            <figure class="foto">
+                                <div class="placeholder">
+                                    <strong>Foto del producto 4</strong>
+                                    <span>Guarda la foto como img/producto4.jpg</span>
+                                </div>
+
+                                <img src="./img/producto4.jpg" alt="Amoblamiento completo de un espacio" loading="lazy"
+                                    onerror="this.remove()">
+                            </figure>
+
+                            <div class="producto-info">
+                                <span class="categoria">Proyectos</span>
+                                <h3>Amoblamiento completo</h3>
+                                <p>
+                                    Equipamos tu casa u oficina de principio a fin. Cuéntanos tu proyecto y te
+                                    cotizamos.
+                                </p>
+
+                                <a class="enlace" href="https://wa.me/593998228348"
+                                    data-whatsapp="amoblamiento completo">
+                                    Consultar producto ↗
+                                </a>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <div class="carrusel-controles">
+                        <div class="puntos" id="puntos" aria-hidden="true"></div>
+
+                        <div class="flechas">
+                            <button type="button" class="flecha" id="anterior" aria-label="Producto anterior">←</button>
+                            <button type="button" class="flecha" id="siguiente"
+                                aria-label="Producto siguiente">→</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CÓMO TRABAJAMOS -->
+        <section id="proceso" class="seccion">
+            <div class="contenedor">
+
+                <div class="titulo-seccion" data-animar>
+                    <div>
+                        <p class="etiqueta">Cómo trabajamos</p>
+                        <h2>Cotizar es fácil y rápido.</h2>
+                    </div>
+
+                    <p>
+                        Sin complicaciones: nos escribes, revisamos tu caso
+                        y te enviamos una propuesta.
+                    </p>
+                </div>
+
+                <ol class="pasos">
+                    <li class="paso" data-animar>
+                        <span class="paso-numero">1</span>
+                        <h3>Escríbenos</h3>
+                        <p>
+                            Cuéntanos por WhatsApp si necesitas amoblar un espacio
+                            o dar mantenimiento a tus muebles.
+                        </p>
+                    </li>
+
+                    <li class="paso" data-animar>
+                        <span class="paso-numero">2</span>
+                        <h3>Envíanos fotos</h3>
+                        <p>
+                            Una foto de tu juego de sala, silla o ambiente nos
+                            ayuda a entender qué necesitas.
+                        </p>
+                    </li>
+
+                    <li class="paso" data-animar>
+                        <span class="paso-numero">3</span>
+                        <h3>Recibe tu cotización</h3>
+                        <p>
+                            Te respondemos con opciones y coordinamos contigo
+                            los siguientes pasos.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- NOSOTROS -->
+        <section id="nosotros" class="seccion fondo-suave">
+            <div class="contenedor nosotros">
+
+                <figure class="foto" data-animar>
+                    <div class="placeholder">
+                        <strong>Foto de un trabajo realizado</strong>
+                        <span>Guarda la foto como img/trabajo.jpg</span>
+                    </div>
+
+                    <img src="./img/trabajo.jpg" alt="Trabajo realizado por AM OFFICE" loading="lazy"
+                        onerror="this.remove()">
+                </figure>
+
+                <div data-animar>
+                    <p class="etiqueta">Conoce AM OFFICE</p>
+                    <h2>Experiencia que acompaña cada proyecto.</h2>
+
+                    <p class="texto-nosotros">
+                        Contamos con más de 10 años de experiencia en
+                        amoblamiento, venta de modulares y sillas de oficina, y
+                        mantenimiento de muebles. Hemos trabajado con varias
+                        empresas conocidas de Quito y con personas que buscan
+                        renovar sus espacios.
+                    </p>
+
+                    <ul class="lista">
+                        <li>Amoblamiento para hogares y oficinas.</li>
+                        <li>Venta de modulares y sillas de oficina.</li>
+                        <li>Mantenimiento de juegos de sala.</li>
+                        <li>Mantenimiento de sillas de oficina.</li>
+                    </ul>
+
+                    <a class="enlace" href="#contacto">
+                        Hablemos de tu proyecto →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PREGUNTAS FRECUENTES -->
+        <section id="preguntas" class="seccion">
+            <div class="contenedor faq-contenedor">
+
+                <div data-animar>
+                    <p class="etiqueta">Preguntas frecuentes</p>
+                    <h2>Resolvemos tus dudas.</h2>
+                </div>
+
+                <div class="faq" data-animar>
+                    <details>
+                        <summary>¿Cómo puedo solicitar una cotización?</summary>
+                        <p>
+                            Escríbenos por WhatsApp al 099 822 8348 con tu consulta.
+                            Si es posible, envíanos fotos para darte una mejor respuesta.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>¿Trabajan con empresas y con personas?</summary>
+                        <p>
+                            Sí. Atendemos tanto a empresas como a personas que
+                            necesitan amoblar o dar mantenimiento a sus muebles.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>¿Qué muebles pueden mantener?</summary>
+                        <p>
+                            Damos mantenimiento a juegos de sala y a sillas de oficina.
+                            Cuéntanos qué necesita el tuyo y te orientamos.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>¿Dónde están ubicados?</summary>
+                        <p>
+                            En Quito, en la Ciudadela del Ejército, Av. General
+                            José Gallardo.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="contacto">
+            <div class="contenedor contacto-contenido">
+
+                <div data-animar>
+                    <p class="etiqueta">Demos el siguiente paso</p>
+
+                    <h2>¿Amoblar o renovar?<br>Conversemos.</h2>
+
+                    <p class="descripcion-contacto">
+                        Envíanos fotos de tus muebles o cuéntanos tu idea
+                        por WhatsApp para solicitar una cotización.
+                    </p>
+
+                    <a class="boton boton-whatsapp" href="https://wa.me/593998228348" data-whatsapp="">
+                        <svg class="icono-wa" viewBox="0 0 32 32" aria-hidden="true">
+                            <path
+                                d="M16.04 3C8.84 3 3 8.8 3 15.95c0 2.28.6 4.5 1.74 6.46L3 29l6.77-1.7a13.1 13.1 0 0 0 6.27 1.6C23.2 28.9 29 23.1 29 15.95S23.2 3 16.04 3Zm0 23.7c-1.95 0-3.86-.52-5.53-1.5l-.4-.23-4.02 1 1.07-3.9-.26-.4a10.6 10.6 0 0 1-1.63-5.7c0-5.88 4.82-10.66 10.77-10.66 5.94 0 10.77 4.78 10.77 10.66 0 5.88-4.83 10.73-10.77 10.73Zm5.9-8c-.32-.16-1.9-.94-2.2-1.04-.3-.1-.5-.16-.72.16-.22.32-.83 1.04-1.02 1.26-.18.22-.38.24-.7.08-.32-.16-1.36-.5-2.58-1.6-.95-.85-1.6-1.9-1.78-2.22-.19-.32-.02-.5.14-.66.15-.14.32-.38.48-.57.16-.18.22-.32.32-.53.1-.22.05-.4-.03-.56-.08-.16-.72-1.74-.98-2.38-.26-.62-.52-.54-.72-.55h-.62c-.22 0-.56.08-.85.4-.3.32-1.12 1.1-1.12 2.68 0 1.58 1.15 3.1 1.3 3.32.16.22 2.26 3.45 5.47 4.84.76.33 1.36.52 1.82.67.77.24 1.46.2 2.01.12.61-.09 1.9-.78 2.16-1.53.27-.75.27-1.4.19-1.53-.08-.13-.3-.21-.62-.37Z" />
+                        </svg>
+                        Escribir por WhatsApp
+                    </a>
+                </div>
+
+                <div class="datos-contacto" data-animar>
+                    <h3>Encuéntranos en Quito</h3>
+
+                    <address>
+                        Ciudadela del Ejército<br>
+                        Av. General José Gallardo
+                    </address>
+
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Ciudadela+del+Ejercito+Av+General+Jose+Gallardo+Quito"
+                        target="_blank" rel="noopener noreferrer">
+                        Buscar dirección en Google Maps ↗
+                    </a>
+
+                    <h3 class="titulo-telefono">Teléfono y WhatsApp</h3>
+                    <a href="tel:+593998228348">099 822 8348</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor pie">
+            <span>
+                © <span id="anio">2026</span> AM OFFICE.
+                Todos los derechos reservados.
+            </span>
+            <span>Quito, Ecuador</span>
+        </div>
+    </footer>
+
+    <a class="whatsapp-flotante" href="https://wa.me/593998228348" data-whatsapp="" aria-label="Contactar por WhatsApp">
+        <svg class="icono-wa" viewBox="0 0 32 32" aria-hidden="true">
+            <path
+                d="M16.04 3C8.84 3 3 8.8 3 15.95c0 2.28.6 4.5 1.74 6.46L3 29l6.77-1.7a13.1 13.1 0 0 0 6.27 1.6C23.2 28.9 29 23.1 29 15.95S23.2 3 16.04 3Zm0 23.7c-1.95 0-3.86-.52-5.53-1.5l-.4-.23-4.02 1 1.07-3.9-.26-.4a10.6 10.6 0 0 1-1.63-5.7c0-5.88 4.82-10.66 10.77-10.66 5.94 0 10.77 4.78 10.77 10.66 0 5.88-4.83 10.73-10.77 10.73Zm5.9-8c-.32-.16-1.9-.94-2.2-1.04-.3-.1-.5-.16-.72.16-.22.32-.83 1.04-1.02 1.26-.18.22-.38.24-.7.08-.32-.16-1.36-.5-2.58-1.6-.95-.85-1.6-1.9-1.78-2.22-.19-.32-.02-.5.14-.66.15-.14.32-.38.48-.57.16-.18.22-.32.32-.53.1-.22.05-.4-.03-.56-.08-.16-.72-1.74-.98-2.38-.26-.62-.52-.54-.72-.55h-.62c-.22 0-.56.08-.85.4-.3.32-1.12 1.1-1.12 2.68 0 1.58 1.15 3.1 1.3 3.32.16.22 2.26 3.45 5.47 4.84.76.33 1.36.52 1.82.67.77.24 1.46.2 2.01.12.61-.09 1.9-.78 2.16-1.53.27-.75.27-1.4.19-1.53-.08-.13-.3-.21-.62-.37Z" />
+        </svg>
+        <span>WhatsApp</span>
+    </a>
+</body>
+
+</html>
